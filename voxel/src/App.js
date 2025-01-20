@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
+import { Home, Landing, NotFound } from './views/index.js';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar.js';
 import './App.css';
 
 function App() {
+
+  //para generar el ternario de que muestre la navbar en todo viewport a excepcion de en el landing
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      { location.pathname !== '/' && <NavBar /> }
+      <Routes>
+        <Route exact path='/' element={<Landing />}/>
+        <Route path='/home' element={<Home />}/>
+        <Route path='*' element={<NotFound />}/> 
+      </Routes>
+    </>
   );
 }
 
