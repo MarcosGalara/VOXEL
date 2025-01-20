@@ -1,8 +1,7 @@
 
 import { Home, Landing, NotFound } from './views/index.js';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar.js';
-import './App.css';
+import NavBar from './components/NavBar/NavBar.jsx';
 
 function App() {
 
