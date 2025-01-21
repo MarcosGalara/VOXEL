@@ -5,7 +5,7 @@ const Landing = () => {
     return(
         <div className="divContainer-landing">
             <div className="letters">
-                <h1>OHHH ! PEPO</h1>
+                <h1>BIENVENIDO A VOXEL</h1>
             </div>
             <div id="button">
                 <Link to='/home'>
