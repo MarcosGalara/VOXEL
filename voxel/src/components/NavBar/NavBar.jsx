@@ -1,29 +1,30 @@
 import { Link } from "react-router-dom";
-import style from '../NavBar/NavBar.module.css';
+//import style from '../NavBar/NavBar.module.css';
 
 const NavBar = () => {
     return(
-        <div className={style.mainContainer}> 
+        <div> 
             <Link to='/Home'>
-                <button className={style.home}>Inicio</button>
+                <button>Inicio</button>
             </Link>
             <Link to='/Home'>
-                <button className={style.newRecipe}>Letreros</button>
+                <button>Letreros</button>
             </Link>
             <Link to='/Home'>
-                <button className={style.newRecipe}>Corte Laser Metales</button>
+                <button>Corte Laser Metales</button>
             </Link>
             <Link to='/Home'>
-                <button className={style.newRecipe}>Corte Laser Acrilicos</button>
+                <button>Corte Laser Acrilicos</button>
             </Link>
             <Link to='/Home'>
-                <button className={style.newRecipe}>Grabados</button>
+                <button>Grabados</button>
             </Link>
             <Link to='/Home'>
-                <button className={style.newRecipe}>Contacto</button>
+                <button>Contacto</button>
             </Link>
             
         </div>
+        //className={style.newRecipe}
     )
 }
 
