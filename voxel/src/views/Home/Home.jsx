@@ -1,25 +1,29 @@
 import React from 'react';
+import MiLetrero from "../../assets/Untitled.jpg";
+import MiLaser from "../../assets/laser.jpg";
+import MiCorporeo from "../../assets/corporeo.jpg";
+import MiGrabado from "../../assets/grabado.jpg"
 
 const trabajos = [
   {
     id: 1,
     nombre: 'Letreros',
-    imagen: 'https://lh5.googleusercontent.com/-1nN3PJf7ddjsNj2AOvbXZycydDGammlOBLxg77gvFhX3Y64k0RmKAbbQgO39ABrM6QCIhkIBv6XOBvzNt4MvMPfoM-EUPWK_dXE0jwvT1UCytMJ8tHRgHDJnXEnM-trRw=w1280'
+    imagen: MiLetrero,
   },
   {
     id: 2,
     nombre: 'Corte Laser Metales',
-    imagen: 'https://lh6.googleusercontent.com/zTtzrDRUbjw50v6Ns_zKOvaFLbWQ6zny4-h6blmuA-oj22Wml6mA78piib7loNjBqHpdtw6srQRwuGu8gULYWk-JOM6X5J9PHKY9UPqIW-Q-JcNmlMrszbDAcyV-65Zv1w=w1280',
+    imagen: MiLaser,
   },
   {
     id: 3,
     nombre: 'Corte Laser Acrilicos',
-    imagen: 'https://lh5.googleusercontent.com/Bjwz92BwJDbnMKQpcq4yhf3_s0V2P687QcfU3IruGdki_U-6KLOMOmQKRQavf2ExvfWqN3s_gI_N-WSjBqUcHL_mz4r-ZKH3CfHRsrUMX2Sxzl3q93nNQk6hjPsChUo7XQ=w1280',
+    imagen: MiCorporeo,
   },
   {
     id: 4,
     nombre: 'Grabados',
-    imagen: 'https://lh6.googleusercontent.com/wnM9Ko0wKhX1lhIj77Xe7Cv2kOSVEU0gAiG18YvjIIIeWdNWvhK8LJ_Ai5fpOog-s6JZGTwBiMgpp6JIxLJMDzt6H-ft_jHmEb1N6LEW5aWJupZ5KTLl25ONnNTnuDCBIQ=w1280',
+    imagen: MiGrabado,
   },
 ];
 

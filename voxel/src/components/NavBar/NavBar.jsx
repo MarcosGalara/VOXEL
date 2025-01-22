@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
-//import style from '../NavBar/NavBar.module.css';
+import logo from '../../assets/logo.png';
+import './NavBar.css';
+
 
 const NavBar = () => {
     return(
+    <nav className="navbar">
+        <div className="navbar-logo">
+                <img src={logo} alt="Logo" className="logo" />
+                <span className="company-name">VOXEL CORTE LASER</span>
+        </div>
         <div> 
             <Link to='/Home'>
                 <button>Inicio</button>
@@ -24,7 +31,8 @@ const NavBar = () => {
             </Link>
             
         </div>
-        //className={style.newRecipe}
+    </nav>
+        
     )
 }
 
