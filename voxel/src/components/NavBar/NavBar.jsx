@@ -14,19 +14,19 @@ const NavBar = () => {
             <Link to='/Home'>
                 <button>Inicio</button>
             </Link>
-            <Link to='/Home'>
+            <Link to='/letreros'>
                 <button>Letreros</button>
             </Link>
-            <Link to='/Home'>
+            <Link to='/corte-laser-metales'>
                 <button>Corte Laser Metales</button>
             </Link>
-            <Link to='/Home'>
+            <Link to='/corte-laser-acrilicos'>
                 <button>Corte Laser Acrilicos</button>
             </Link>
-            <Link to='/Home'>
+            <Link to='/grabados'>
                 <button>Grabados</button>
             </Link>
-            <Link to='/Home'>
+            <Link to='/contacto'>
                 <button>Contacto</button>
             </Link>
             

@@ -1,22 +1,21 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout.jsx";
+import Landing from "./views/Landing/Landing.jsx";
+import Home from "./views/Home/Home.jsx";
+import Contacto from "./components/Contacto/Contacto.jsx";
 
-import { Landing, Home } from './views/index.js';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar.jsx';
-
-function App() {
-
-  //para generar el ternario de que muestre la navbar en todo viewport a excepcion de en el landing
-  const location = useLocation();
-
+const App = () => {
   return (
-    <>
-      { location.pathname !== '/' && <NavBar /> }
-      <Routes>
-        <Route exact path='/' element={<Landing />}/>
-        <Route path='/home' element={<Home />}/>
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      
+      <Route path="/*" element={<Layout />}>
+        <Route path="home" element={<Home />} />
+        <Route path="contacto" element={<Contacto />} />
+      </Route>
+    </Routes>
   );
-}
+};
 
 export default App;
