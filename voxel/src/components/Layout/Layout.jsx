@@ -6,7 +6,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
   const location = useLocation();
-  const showServicesTitle = location.pathname === "/home";
+  const showServicesTitle = location.pathname !== "/contacto";
 
   return (
     <>
