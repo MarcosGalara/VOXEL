@@ -10,8 +10,8 @@ const Layout = () => {
 
   return (
     <>
-      <Header showServicesTitle={showServicesTitle}  />
       <NavBar />
+      <Header showServicesTitle={showServicesTitle}  />
       <main style={{ padding: "16px" }}>
         <Outlet />
       </main>
