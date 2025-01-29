@@ -6,6 +6,9 @@ import Home from "./views/Home/Home.jsx";
 import Contacto from "./components/Contacto/Contacto.jsx";
 import Grabados from "./components/Grabados/Grabados.jsx";
 import LaserAcrilico from "./components/LaserAcrilico/LaserAcrilico.jsx";
+import Letreros from "./components/Letreros/Letreros.jsx";
+import LaserMetales from "./components/LaserMetales/LaserMetales.jsx";
+
 
 const App = () => {
   return (
@@ -16,7 +19,9 @@ const App = () => {
         <Route path="home" element={<Home />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path="grabados" element={<Grabados />} />
-        <Route path="Corte-Laser-Acrilico" element={<LaserAcrilico />} />
+        <Route path="corte-laser-acrilicos" element={<LaserAcrilico />} />
+        <Route path="letreros" element={<Letreros />} />
+        <Route path="corte-laser-metales" element={<LaserMetales />} />
       </Route>
     </Routes>
   );

@@ -5,7 +5,7 @@ import LetraMDF from "../../assets/LaserAcrilico/LetraMDF.jpg";
 import MetalAcr from "../../assets/LaserAcrilico/MetalAcr.jpg";
 
 
-const trabajosLaserAcrilico = [
+const trabajosLaserAcrilicos = [
     {
       id: 1,
       nombre: 'Calados luminosos con acrilico',
@@ -28,12 +28,12 @@ const trabajosLaserAcrilico = [
     },
   ];
 
-  const LaserAcrilico = () => {
+  const LaserAcrilicos = () => {
     return (
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
-        {trabajosLaserAcrilico.map((trabajosLaserAcrilico) => (
+        {trabajosLaserAcrilicos.map((trabajosLaserAcrilicos) => (
           <div
-            key={trabajosLaserAcrilico.id}
+            key={trabajosLaserAcrilicos.id}
             style={{
               border: '1px solid #ccc',
               borderRadius: '8px',
@@ -43,16 +43,16 @@ const trabajosLaserAcrilico = [
             }}
           >
             <img
-              src={trabajosLaserAcrilico.imagen}
-              alt={trabajosLaserAcrilico.nombre}
+              src={trabajosLaserAcrilicos.imagen}
+              alt={trabajosLaserAcrilicos.nombre}
               style={{ width: '100%', borderRadius: '8px' }}
             />
-            <h3>{trabajosLaserAcrilico.nombre}</h3>
+            <h3>{trabajosLaserAcrilicos.nombre}</h3>
           </div>
         ))}
       </div>
     );
   };
   
-  export default LaserAcrilico;
+  export default LaserAcrilicos;
   
