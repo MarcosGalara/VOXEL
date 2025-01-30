@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../Header/Header.jsx";
 import NavBar from "../NavBar/NavBar.jsx";
+import Footer from "../Footer/Footer.jsx";
 import { Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
@@ -15,6 +16,8 @@ const Layout = () => {
       <main style={{ padding: "16px" }}>
         <Outlet />
       </main>
+      <Footer showServicesTitle={showServicesTitle}  />
+
     </>
   );
 };

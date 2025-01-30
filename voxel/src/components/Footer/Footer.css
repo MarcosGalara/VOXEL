@@ -1,0 +1,47 @@
+.footer-container {
+    width: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Mantiene el mismo estilo que "Nuestros Servicios" en el Header */
+  .footer-location-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #242424;
+    text-align: center;
+    padding: 16px 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Imagen con hover */
+  .footer-map-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; /* Hace que el cursor sea una mano */
+}
+  
+  .footer-map-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .footer-map-text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: normal;
+    max-width: 400px;
+    margin: 10px auto 0;
+    text-align: center;
+    cursor: pointer; /* Hace que el cursor sea una mano */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-map-text:hover {
+    color: blue; /* Cambia el color del texto a azul al hacer hover */
+  }
+  

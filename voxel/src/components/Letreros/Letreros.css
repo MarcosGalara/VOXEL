@@ -1,0 +1,48 @@
+/* Contenedor principal para centrar las tarjetas */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Contenedor de las tarjetas */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre tarjetas */
+    justify-content: center;
+    max-width: 1200px; /* Para evitar que las tarjetas se extiendan demasiado */
+  }
+  
+  /* Tarjeta individual */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 220px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Imagen dentro de la tarjeta */
+  .card-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Título dentro de la tarjeta */
+  .card-title {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Efecto hover: Resaltar la tarjeta */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgb(219, 152, 5);
+    background-color: #f7a714;
+  }
+  

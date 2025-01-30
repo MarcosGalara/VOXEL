@@ -8,6 +8,7 @@ import Grabados from "./components/Grabados/Grabados.jsx";
 import LaserAcrilico from "./components/LaserAcrilico/LaserAcrilico.jsx";
 import Letreros from "./components/Letreros/Letreros.jsx";
 import LaserMetales from "./components/LaserMetales/LaserMetales.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 
 const App = () => {
@@ -21,7 +22,8 @@ const App = () => {
         <Route path="grabados" element={<Grabados />} />
         <Route path="corte-laser-acrilicos" element={<LaserAcrilico />} />
         <Route path="letreros" element={<Letreros />} />
-        <Route path="corte-laser-metales" element={<LaserMetales />} />
+        <Route path="corte-laser-metales" element={<LaserMetales />} /> 
+        <Route path="footer" element={<Footer />} />
       </Route>
     </Routes>
   );
