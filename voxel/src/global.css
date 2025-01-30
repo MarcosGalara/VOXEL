@@ -1,0 +1,14 @@
+/* Reset básico para eliminar espacios en blanco no deseados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Asegura que `html`, `body` y `#root` ocupen toda la pantalla */
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* O el color de fondo que prefieras */
+  }
+  

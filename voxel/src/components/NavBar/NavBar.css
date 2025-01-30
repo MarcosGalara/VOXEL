@@ -1,41 +1,53 @@
+/* Contenedor de la barra de navegación */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #242424;
     padding: 10px 20px;
-    background-color: #000; /* Fondo negro */
-    color: #FFD700; /* Amarillo */
 }
 
+/* Logo y nombre de la empresa */
 .navbar-logo {
     display: flex;
     align-items: center;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
     margin-right: 10px;
 }
 
 .company-name {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
-.navbar-links {
+/* Contenedor de los botones */
+.navbar div {
     display: flex;
-    gap: 20px; /* Espaciado entre enlaces */
+    gap: 12px; /* Espaciado uniforme entre botones */
 }
 
-.navbar-links a {
-    text-decoration: none;
-    color: #FFD700;
+/* Estilos de los botones */
+.navbar button {
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid transparent;
+    padding: 8px 15px;
     font-size: 1rem;
     font-weight: bold;
-    transition: color 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.navbar-links a:hover {
-    color: #fff; /* Cambia a blanco al pasar el cursor */
+/* Efecto hover: cambia color y resalta */
+.navbar button:hover {
+    background-color: #ff9800;  /* Color llamativo en hover */
+    color: #000;
+    border: 2px solid white;
+    transform: scale(1.05);
 }
