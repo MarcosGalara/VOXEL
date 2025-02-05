@@ -1,8 +1,9 @@
 import React from "react";
+import "./Contacto.css"
 
 const Contacto = () => {
     return(
-        <h1>voxelcortelaser@gmail.com</h1>
+        <h1 className="container">voxelcortelaser@gmail.com</h1>
     )
 }
 

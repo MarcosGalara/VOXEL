@@ -19,8 +19,8 @@
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 220px;
-    padding: 16px;
+    width: 280px;
+    padding: 20px;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -29,6 +29,8 @@
   /* Imagen dentro de la tarjeta */
   .card-image {
     width: 100%;
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 8px;
   }
   

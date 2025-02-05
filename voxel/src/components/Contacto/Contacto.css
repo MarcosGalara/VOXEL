@@ -1,0 +1,12 @@
+.contacto {
+    position: relative;
+    z-index: 10;
+    text-align: center; /* Centrar el texto */
+    color: #FFD700; /* Amarillo dorado */
+    font-size: 3rem; /* Tamaño grande */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 5px rgba(255, 223, 0, 0.7); /* Sombra dorada */
+    background: linear-gradient(90deg, #FFEA00, #FFC107, #FFB300); /* Degradado amarillo */
+    -webkit-text-fill-color: transparent; /* Hace el texto con degradado */
+    margin-top: 20vh; /* Lo baja un poco en la pantalla */
+}
